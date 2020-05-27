@@ -253,6 +253,8 @@ GameObject:
   - component: {fileID: -3620890967455729154}
   - component: {fileID: -5063607932822004091}
   - component: {fileID: -6530785585357174733}
+  - component: {fileID: 7607895994218736297}
+  - component: {fileID: -2180830383813814806}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -298,7 +300,7 @@ Rigidbody:
   m_GameObject: {fileID: 8259748644456514552}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0
+  m_Drag: 4
   m_AngularDrag: 0.05
   m_UseGravity: 0
   m_IsKinematic: 0
@@ -395,9 +397,9 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_YDrive:
     serializedVersion: 3
-    positionSpring: 0
+    positionSpring: 20
     positionDamper: 0
-    maximumForce: 3.4028233e+38
+    maximumForce: 40
   m_ZDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -480,11 +482,42 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   syncMode: 0
-  syncInterval: 0.3
+  syncInterval: 0.001
+  clientAuthority: 0
+  localPositionSensitivity: 0.001
+  localRotationSensitivity: 0.001
+  localScaleSensitivity: 0.01
+--- !u!114 &7607895994218736297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8259748644456514552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 734b48bea0b204338958ee3d885e11f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  syncMode: 0
+  syncInterval: 0.001
   clientAuthority: 0
   localPositionSensitivity: 0.01
   localRotationSensitivity: 0.01
   localScaleSensitivity: 0.01
+  target: {fileID: 8259748644932767661}
+--- !u!114 &-2180830383813814806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8259748644456514552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 794cb414f1a01254aa7327c3b09c017e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8259748644932767666
 GameObject:
   m_ObjectHideFlags: 0

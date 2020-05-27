@@ -67,7 +67,7 @@ public class PlayerController : MonoBehaviour
 
     private void SetJointSettings(float _jointSpring){
         joint.yDrive = new JointDrive {
-            positionSpring = jointSpring, 
+            positionSpring = _jointSpring, 
             maximumForce = jointMaxForce
         };
     }
