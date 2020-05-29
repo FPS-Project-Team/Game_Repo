@@ -1,9 +1,7 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
+<
 guid: 2dbd065ec76f275498496a0577fa818d
-=======
-guid: ef89ecf5b26b81649b15cad7070bec71
->>>>>>> parent of baf3af4... Revert "Test2"
+
 PrefabImporter:
   externalObjects: {}
   userData: 
