@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1466541399}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.646, y: 0.258, z: -0.296}
+  m_LocalPosition: {x: 0.646, y: -0.081, z: 0.35}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8259748644932767661}
@@ -475,7 +475,11 @@ GameObject:
   - component: {fileID: -3275018136761194109}
   - component: {fileID: 2789473443161309008}
   - component: {fileID: -892232820326611523}
+<<<<<<< HEAD
   - component: {fileID: 2398908133414272991}
+=======
+  - component: {fileID: 8883130362381990140}
+>>>>>>> parent of baf3af4... Revert "Test2"
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -808,7 +812,11 @@ MonoBehaviour:
   localRotationSensitivity: 0.01
   localScaleSensitivity: 0.01
   target: {fileID: 2063522083048261213}
+<<<<<<< HEAD
 --- !u!114 &2398908133414272991
+=======
+--- !u!114 &8883130362381990140
+>>>>>>> parent of baf3af4... Revert "Test2"
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -817,12 +825,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 8259748644456514552}
   m_Enabled: 1
   m_EditorHideFlags: 0
+<<<<<<< HEAD
   m_Script: {fileID: 11500000, guid: 8fd9e02c594af8648b34804b3c803309, type: 3}
+=======
+  m_Script: {fileID: 11500000, guid: 465f83464ad9d504eb9ff9a9fd5a3c06, type: 3}
+>>>>>>> parent of baf3af4... Revert "Test2"
   m_Name: 
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
   weaponLayerName: Weapon
+<<<<<<< HEAD
   weaponHolder: {fileID: 0}
   primaryWeapon:
     name: Glock
@@ -830,6 +843,16 @@ MonoBehaviour:
     range: 100
     fireRate: 0
     graphics: {fileID: 0}
+=======
+  weaponHolder: {fileID: 1466541400}
+  primaryWeapon:
+    name: Blaster
+    damage: 5
+    range: 100
+    fireRate: 0
+    graphics: {fileID: 2002119750321422074, guid: ef89ecf5b26b81649b15cad7070bec71,
+      type: 3}
+>>>>>>> parent of baf3af4... Revert "Test2"
 --- !u!1 &8259748644932767666
 GameObject:
   m_ObjectHideFlags: 0
