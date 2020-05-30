@@ -23,13 +23,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1466541399}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.646, y: -0.081, z: 0.35}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0.273, y: -0.152, z: 0.873}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8259748644932767661}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!1 &2574642407333172870
 GameObject:
   m_ObjectHideFlags: 0
@@ -134,7 +134,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3590641231141014110}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8259748644932767661}
@@ -475,9 +475,7 @@ GameObject:
   - component: {fileID: -3275018136761194109}
   - component: {fileID: 2789473443161309008}
   - component: {fileID: -892232820326611523}
-
-  - component: {fileID: 2398908133414272991}
-
+  - component: {fileID: -1886586762146142704}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -810,9 +808,7 @@ MonoBehaviour:
   localRotationSensitivity: 0.01
   localScaleSensitivity: 0.01
   target: {fileID: 2063522083048261213}
-
---- !u!114 &2398908133414272991
-
+--- !u!114 &-1886586762146142704
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -821,31 +817,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 8259748644456514552}
   m_Enabled: 1
   m_EditorHideFlags: 0
-
-  m_Script: {fileID: 11500000, guid: 8fd9e02c594af8648b34804b3c803309, type: 3}
-
+  m_Script: {fileID: 11500000, guid: 0b71231c8982c6a4098000631458aab2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
   weaponLayerName: Weapon
-
-  weaponHolder: {fileID: 0}
-  primaryWeapon:
-    name: Glock
-    damage: 10
-    range: 100
-    fireRate: 0
-    graphics: {fileID: 0}
   weaponHolder: {fileID: 1466541400}
   primaryWeapon:
     name: Blaster
     damage: 5
     range: 100
-    fireRate: 0
-    graphics: {fileID: 2002119750321422074, guid: ef89ecf5b26b81649b15cad7070bec71,
+    fireRate: 10
+    graphics: {fileID: 20379585260334243, guid: 6a6769651d37eee45bf854fc7393cbc2,
       type: 3}
-
 --- !u!1 &8259748644932767666
 GameObject:
   m_ObjectHideFlags: 0
