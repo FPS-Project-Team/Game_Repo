@@ -21,8 +21,10 @@ public class PlayerShoot : NetworkBehaviour{
         weaponManager = GetComponent<WeaponManager>();
     }
 
+
     void Update(){
         currentWeapon = weaponManager.GetCurrentWeapon();
+
         if(currentWeapon.fireRate <= 0f){
             if(Input.GetButtonDown("Fire1")){
                 Shoot();
@@ -38,14 +40,44 @@ public class PlayerShoot : NetworkBehaviour{
         }
     }
 
+    [Command]
+    void CmdOnShoot(){
+        RpcDoShootEffect();
+    }
+
+    [ClientRpc]
+    void RpcDoShootEffect(){
+        weaponManager.GetCurrentGraphics().muzzleFlash.Play();
+    }
+
+
+    [Command]
+    void CmdOnHIt(Vector3 _pos, Vector3 _normal){
+        RpcDoHitEffect(_pos, _normal);
+    }
+
+    [ClientRpc]
+    void RpcDoHitEffect(Vector3 _pos, Vector3 _normal){
+        GameObject _hitEffect = (GameObject)Instantiate(weaponManager.GetCurrentGraphics().hitEffectPrefab, _pos, Quaternion.LookRotation(_normal));
+        Destroy(_hitEffect, 2f);
+    }
+
     [Client]
     void Shoot(){
-        Debug.Log("SHOOT!");
+        if(!isLocalPlayer){
+            return;
+        }
+
+        //We are shooting; call on shoot method
+        CmdOnShoot();
+
         RaycastHit _hit;
         if(Physics.Raycast(cam.transform.position, cam.transform.forward, out _hit, currentWeapon.range, mask)){
             if(_hit.collider.tag == PLAYER_TAG){
                 CmdPlayerShot(_hit.collider.name, currentWeapon.damage);
             }
+
+            CmdOnHIt(_hit.point, _hit.normal);
         }
     }
     [Command]

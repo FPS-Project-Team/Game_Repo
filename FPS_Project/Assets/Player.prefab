@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1466541399}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0.273, y: -0.152, z: 0.873}
+  m_LocalPosition: {x: 0.248, y: -0.152, z: 0.873}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8259748644932767661}
@@ -689,7 +689,6 @@ MonoBehaviour:
   - {fileID: 8259748644456514549}
   - {fileID: 8259748644932767663}
   - {fileID: 8259748644932767660}
-  - {fileID: -2180830383813814806}
   - {fileID: 2789473443161309008}
   - {fileID: 329354051255974389}
   remoteLayerName: RemotePlayer
@@ -829,7 +828,7 @@ MonoBehaviour:
     damage: 5
     range: 100
     fireRate: 10
-    graphics: {fileID: 20379585260334243, guid: 6a6769651d37eee45bf854fc7393cbc2,
+    graphics: {fileID: 2902243510946742129, guid: 2dbd065ec76f275498496a0577fa818d,
       type: 3}
 --- !u!1 &8259748644932767666
 GameObject:
