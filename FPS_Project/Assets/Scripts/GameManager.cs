@@ -5,6 +5,8 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
     public MatchSettings matchSettings;  
 
+    [SerializeField] private GameObject sceneCamera;
+
     void Awake(){
         if(instance != null){
             Debug.LogError("More than one GameManager in scene");
@@ -12,7 +14,15 @@ public class GameManager : MonoBehaviour
         else{
             instance = this;
         }
-    } 
+    }
+
+    public void SetSceneCameraActive(bool isActive){
+        if(sceneCamera == null){
+            return;
+        }
+        
+        sceneCamera.SetActive(isActive);
+    }
     
     #region PlayerTracking
     private const string PLAYER_ID_PREFIX = "Player ";
@@ -31,20 +41,6 @@ public class GameManager : MonoBehaviour
     public static Player GetPlayer(string _playerID){
         return players[_playerID];
     }
-
-    /*
-    void OnGUI(){
-        GUILayout.BeginArea(new Rect(200,200,200,500));
-        GUILayout.BeginVertical();
-
-        foreach(string _playerID in players.Keys){
-            GUILayout.Label(_playerID + "  -  " + players[_playerID].transform.name);
-        }
-
-        GUILayout.EndVertical();
-        GUILayout.EndArea();
-
-    }*/
 
     #endregion
 }
