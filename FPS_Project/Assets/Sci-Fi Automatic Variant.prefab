@@ -58,6 +58,26 @@ PrefabInstance:
       propertyPath: EmissionModule.rateOverTime.scalar
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 125085103132228129, guid: 29a5971aa6ff80641b7eb81dfc1bd307,
+        type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 125085103132228135, guid: 29a5971aa6ff80641b7eb81dfc1bd307,
+        type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 125085103147433825, guid: 29a5971aa6ff80641b7eb81dfc1bd307,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 125085103147433825, guid: 29a5971aa6ff80641b7eb81dfc1bd307,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 125085103147433827, guid: 29a5971aa6ff80641b7eb81dfc1bd307,
         type: 3}
       propertyPath: m_LocalPosition.x
